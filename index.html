@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moon Harverst - bootstrapping of space industry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrapSwitch.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrapSwitch.js"></script>
+    <script src="js/handlebars.runtime.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div id="header" class="row">
+
+      </div>
+      <div id="screens" class="well row">
+        <div id="screen-meeting" class="screen row">
+            <img draggable="false" src="img/NASA_logo.svg" class="span2">
+          </span>
+          <div id="advisors"></div>
+        </div>
+        <div id="screen-budget">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Cantidad</th>
+                <th>Costo</th>
+                <th>Sub-total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Robot Factory</strong>
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                  <a href="#" class="btn">
+                    <i class="icon icon-plus"></i>
+                  </a>
+                  <a href="#" class="btn">
+                    <i class="icon icon-minus"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="screen-moon" class="row">
+          <div id="area-info" class="modal hide fade">
+          </div>
+          <div class="span2">
+            <div id="area-stats"></div>
+          </div>
+          <div id="moon-map" class="span9">
+            <img id="moon-img" draggable="false" src="img/moon.png" style="margin: 26px; width: 648px; height: 575px;">
+            <div id="moon-areas">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
